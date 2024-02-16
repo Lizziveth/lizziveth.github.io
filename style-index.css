@@ -1,0 +1,188 @@
+body {
+    height: 100vh;
+    background: linear-gradient(to bottom, #B56A84, #0E4C5B);
+    overflow: hidden;
+    position: relative
+}
+
+.Titulo {
+    font-family: 'DM Serif Display', cursive;
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%); 
+    font-size: 36px;
+    color: #FF1493; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); 
+    text-align: center;
+    font-weight: bold;
+    -webkit-text-stroke: 0px #000000;
+    z-index: 2;
+}
+
+.Bienvenida {
+    font-family: 'DM Serif Display', cursive;
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    color: #87CEFA; 
+    letter-spacing: 1px;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-text-stroke: 0px #fff; 
+    text-shadow: 6px 6px 4px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+
+
+.MenuButton {
+    display: inline-block;
+    position: absolute;
+    top: 80%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0.5em 1.7em;
+    margin: 0 0.1em 0.1em 0;
+    border: 0.16em solid rgba(255, 255, 255, 0);
+    background-color: #FFB6C1;
+    border-radius: 2em;
+    transition: background-color 0.8s ease;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'DM Serif Display', serif;
+    font-weight: 300;
+    color: #ffffff;
+    text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-weight: bold;
+    font-size: 21px;
+    transition: all 0.2s;
+    z-index: 2;
+  }
+  
+  a.MenuButton:hover {
+    border: 2px solid #87CEEB;
+    background-color: #FF69B4;
+    box-shadow: 0 0 8px 5px #1EF8C3,
+  }
+
+  .ButtonRose,
+  .ButtonDiamond {
+      background-color: transparent;
+      border: none !important; 
+      cursor: pointer;
+      position: absolute;
+      top: 65px; 
+      z-index: 2;
+  }
+  
+  .ButtonRose {
+      left: 52%; 
+      width: 10px; 
+      height: 10px; 
+  }
+  
+  .ButtonDiamond {
+      left: 28%;
+      width: 10px; 
+      height: 10px; 
+  }
+  
+  .ButtonRose:hover,
+  .ButtonDiamond:hover {
+      transform: scale(1.1); 
+      transition: transform 0.3s ease; 
+      outline: none !important;
+      border: none !important;
+  }
+  
+
+.hearts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.hearts ul {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.hearts li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    animation: animate 8s linear infinite;
+}
+
+
+.corazon-50 {
+    font-size: 40px;
+}
+
+.corazon-60 {
+    font-size: 215px;
+}
+
+.corazon-70 {
+    font-size: 125px;
+}
+
+.corazon-80 {
+    font-size: 80px;
+}
+
+.corazon-90 {
+    font-size: 90px;
+}
+
+.corazon-100 {
+    font-size: 159px;
+}
+
+.corazon-110 {
+    font-size: 300px;
+}
+
+.corazon-120 {
+    font-size: 80px;
+}
+
+.corazon-130 {
+    font-size: 400px;
+}
+
+.corazon-140 {
+    font-size: 200px;
+}
+
+.hearts li:before,
+.hearts li:after {
+    content: "❤"; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: inherit;
+    color: #AF8CD8; 
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(800px);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100% {
+        transform: translateY(-500px);  
+        opacity: 0;
+        border-radius: 50%;
+    }
+}

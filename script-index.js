@@ -1,0 +1,62 @@
+
+var audio = document.querySelector('audio');
+
+
+window.addEventListener('beforeunload', function() {
+    localStorage.setItem('audioTime', audio.currentTime);
+});
+
+
+window.addEventListener('load', function() {
+    var audioTime = localStorage.getItem('audioTime');
+    if (audioTime !== null) {
+        audio.currentTime = parseFloat(audioTime);
+    }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const botonrosa = document.getElementById('botonrosa');
+    const botondiamante = document.getElementById('botondiamante');
+
+    const audioRose = document.getElementById('audioRose');
+    const audioDiamond = document.getElementById('audioDiamond');
+
+    botonrosa.addEventListener('click', function() {
+        console.log('Click en el botón rosa');
+        audioDiamond.play(); 
+    });
+
+    botondiamante.addEventListener('click', function() {
+        console.log('Click en el botón diamante');
+        audioDiamond.play(); 
+    });
+});
+
+const heartsContainer = document.getElementById("hearts-container");
+
+const tamanosCorazon = ["corazon-50", "corazon-60", "corazon-70", "corazon-80", "corazon-90", "corazon-100", "corazon-110", "corazon-120", "corazon-130", "corazon-140"];
+
+
+function randomPosition() {
+    return Math.random() * 100 + "%";
+}
+
+function generateHearts() {
+   
+    heartsContainer.innerHTML = "";
+
+   
+    for (let i = 0; i < 20; i++) {
+        const heart = document.createElement("li");
+        const randomIndex = Math.floor(Math.random() * tamanosCorazon.length);
+        const tamano = tamanosCorazon[randomIndex];
+        heart.classList.add(tamano);
+        heart.style.top = randomPosition(); 
+        heart.style.left = randomPosition();
+        heartsContainer.appendChild(heart);
+    }
+}
+
+
+generateHearts();
+

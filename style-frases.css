@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to bottom, #B56A84, #0E4C5B);
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  background-image: linear-gradient(45deg, #c3f3e7 25%, transparent 25%, transparent 50%, #c3f3e7 50%, #c3f3e7 75%, transparent 75%, transparent);
+  background-size: 60px 60px; 
+  background-color: #fdaec4;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  padding: 50px 20px;
+  text-align: center;
+  max-width: 100%;
+  width: 800px;
+}
+
+.atras {
+  position: absolute;
+  top: 3%;
+  left: 1.5%;
+  z-index: 10;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 40px;
+  color: #1EF8C3;
+  transform: rotate(180deg);
+}
+
+
+h3 {
+  margin: 0;
+  opacity: 1;
+  position: relative;
+  top: -15%;
+  font-size: 30px;
+  letter-spacing: 2px;
+  color: #9f68e0;
+}
+
+.joke {
+  font-size: 30px;
+  letter-spacing: 1px;
+  line-height: 40px;
+  margin: 50px auto;
+  max-width: 600px;
+}
+
+.btn {
+  background-color: #9f68e0;
+  color: #fff;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  padding: 14px 40px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn:hover{
+  transform: scale(1.1);
+}
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+
+.hearts {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.hearts ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  z-index: -1;
+}
+
+.hearts li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  animation: animate 8s linear infinite; 
+  z-index: -1;
+}
+
+
+.corazon-50 {
+  font-size: 40px;
+}
+
+.corazon-60 {
+  font-size: 215px;
+}
+
+.corazon-70 {
+  font-size: 125px;
+}
+
+.corazon-80 {
+  font-size: 80px;
+}
+
+.corazon-90 {
+  font-size: 90px;
+}
+
+.corazon-100 {
+  font-size: 159px;
+}
+
+.corazon-110 {
+  font-size: 300px;
+}
+
+.corazon-120 {
+  font-size: 80px;
+}
+
+.corazon-130 {
+  font-size: 400px;
+}
+
+.corazon-140 {
+  font-size: 200px;
+}
+
+
+.hearts li:before,
+.hearts li:after {
+  content: "❤"; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: inherit;
+  color: #AF8CD8; 
+}
+
+@keyframes animate {
+  0% {
+      transform: translateY(800px);
+      opacity: 1;
+      border-radius: 0;
+  }
+
+  100% {
+      transform: translateY(-500px);  
+      opacity: 0;
+      border-radius: 50%;
+  }
+}

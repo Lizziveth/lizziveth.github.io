@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuerdos</title>
+    <link rel="stylesheet" href="style-recuerdos.css"> 
+</head>
+<body>
+    <div class="atras" onclick="window.history.back()">➜</div>
+    <header>
+        <h1>Recuerditos</h1>
+    </header>   
+    <main>
+         <div class="gallery">
+            <div class="column">
+                <img src="Recuerdo.png" alt="Recuerdo" onclick="openPopup('Recuerdo.png','Recuerdo')">
+                <img src="Vertox.png" alt="Vertox"onclick="openPopup('Vertox.png','Vertox')">
+                <img src="Gremio.png" alt="Gremio" onclick="openPopup('Gremio.png','Gremio')">
+            </div>
+            <div class="column">
+                <img src="Javeho.png" alt="Javeho" onclick="openPopup('Javeho.png','Javeho')">
+                <img src="textoLindo.png" alt="textoLindo" onclick="openPopup('textoLindo.png','textoLindo')">
+                <img src="Tejos.png" alt="Tejos" onclick="openPopup('Tejos.png','Tejos')">
+            </div>
+            <div class="column">
+                <img src="Tahitariana.png" alt="Tahitariana" onclick="openPopup('Tahitariana.png','Tahitariana')">
+                <img src="Tahitariana2.png" alt="Tahitariana2" onclick="openPopup('Tahitariana2.png','Tahitariana2')">
+                <img src="Edelweiss.png" alt="Edelweiss" onclick="openPopup('Edelweiss.png','Edelweiss')">
+            </div>
+            <div class="column">
+                <img src="Anillos.png" alt="Anillos" onclick="openPopup('Anillos.png','Anillos')">
+                <img src="Espadas.png" alt="Espadas" onclick="openPopup('Espadas.png','Espadas')">
+                <img src="Hosca.png" alt="Hosca" onclick="openPopup('Hosca.png','Hosca')">
+            </div>
+            <div class="column">
+                <img src="poseGuapa.png" alt="poseGuapa" onclick="openPopup('poseGuapa.png','poseGuapa')">
+                <img src="Frigost.png" alt="Frigost" onclick="openPopup('Frigost.png','Frigost')">
+                <img src="Wabbit.png" alt="Wabbit" onclick="openPopup('Wabbit.png','Wabbit')">
+            </div>
+        </div>
+  
+        <audio src="By Your Side.mp3" loop=true autoplay=true></audio>
+    <!-- Corazones -->
+    <div class="area"> 
+        <ul class="hearts" id="hearts-container">
+        </ul>
+    </div>
+    <!-- Corazones -->
+    </main>
+    <footer>
+        <p></p>
+    </footer>
+    <script src="script-recuerdos.js"></script>
+    <div class="popup" id="popup">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <div class="popup-content">
+            <img id="popup-img" src="" alt="Imagen">
+            <p id="popup-text" class="popup-text"></p>
+        </div>
+    </div>
+    <p id="popup-text" class="popup-text recuerditos"></p>
+</body>
+</html>

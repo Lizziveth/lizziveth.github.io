@@ -1,0 +1,186 @@
+body {
+    height: 100vh;
+    margin: 0;
+    position: relative;
+    overflow-y: auto;
+}
+
+.atras {
+    position: absolute;
+    top: 3%;
+    left: 1.5%;
+    z-index: 10;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 40px;
+    color: #1EF8C3;
+    transform: rotate(180deg);
+}
+
+
+.Gota, .Yopuka, .Feca, .Zobal, .Xelor, .Hipoliro {
+    width: 300px; 
+    height: 300px; 
+    position: absolute; 
+    border-radius: 10px; 
+    text-align: center; 
+}
+
+
+.Gota {
+    top: 30px; 
+    left: 100px; 
+}
+
+.Yopuka {
+    top: 30px; 
+    left: 450px; 
+}
+
+.Feca {
+    top: 37px;
+    left: 800px;
+}
+
+.Zobal {
+    top: 430px; 
+    left: 100px;
+}
+
+.Xelor {
+    top: 420px; 
+    left: 450px; 
+}
+
+.Hipoliro {
+    top: 420px;
+    left: 800px; 
+}
+
+
+.Gota img, .Yopuka img, .Feca img, .Zobal img, .Xelor img, .Hipoliro img {
+    max-width: 100%; 
+    max-height: 100%; 
+    width: auto; 
+    height: auto; 
+    border-radius: 10px; 
+}
+
+.Gota:hover, .Yopuka:hover, .Feca:hover, .Zobal:hover, .Xelor:hover, .Hipoliro:hover {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease;
+}
+
+.Gota p, .Yopuka p, .Feca p, .Zobal p, .Xelor p, .Hipoliro p {
+    color: #ffffff; 
+    font-family: 'DM Serif Display', serif;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 3px;
+    -webkit-text-stroke:    0.1px #000000;
+
+}
+
+
+body:before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #B56A84, #0E4C5B);
+    z-index: -1;
+}
+
+
+.hearts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.hearts ul {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    z-index: -1;
+}
+
+.hearts li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    animation: animate 8s linear infinite; 
+    z-index: -1;
+}
+
+
+.corazon-50 {
+    font-size: 40px;
+}
+
+.corazon-60 {
+    font-size: 215px;
+}
+
+.corazon-70 {
+    font-size: 125px;
+}
+
+.corazon-80 {
+    font-size: 80px;
+}
+
+.corazon-90 {
+    font-size: 90px;
+}
+
+.corazon-100 {
+    font-size: 159px;
+}
+
+.corazon-110 {
+    font-size: 300px;
+}
+
+.corazon-120 {
+    font-size: 80px;
+}
+
+.corazon-130 {
+    font-size: 400px;
+}
+
+.corazon-140 {
+    font-size: 200px;
+}
+
+
+.hearts li:before,
+.hearts li:after {
+    content: "❤"; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: inherit; 
+    color: #AF8CD8;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(800px);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100% {
+        transform: translateY(-500px);  
+        opacity: 0;
+        border-radius: 50%;
+    }
+}

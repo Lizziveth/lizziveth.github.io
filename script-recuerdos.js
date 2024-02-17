@@ -7,6 +7,8 @@ var textoExplicativo = {
     "Javeho": "Mi mujer y yo, justo después de acabar la mazmorra, un momento íntimo que guardo en mi corazón.",
     "textoLindo": "Una de nuestras primeras conversaciones de cariño, 'Recuerdo' que te dió pena que lo dijera en el chat local, pero después de cerrar el saco, pudimos darnos cariño de esta forma, fue demasiado lindo hay que repetir :3.",
     "Tejos": "Juntas, antes de pasar esa mazmorra XD, recuerdo que me mostraste el sonido al caminar por los huesos y nos quedamos embobadas un buen rato Jjssjsjs",
+    "Javeho2": "Esta fue tomada recién, después de farmear lágrimas para febrero, quería guardar este recuerdo también, representando nuestra travesía por las moduladas n.n",
+    "SoulKnight": "Justo hace unas horas, un nuevo jueguito para compartir, me dió mucho gusto que te pusieras el anillo conmigo, entendiste de una lo que quiería XD",
 
     
     "Tahitariana": "'Tahitariana de los vientos, para ti', ese regalo que guardaste por meses, y que ahora se quedará en mi cofre hasta el fin de los tiempos.",

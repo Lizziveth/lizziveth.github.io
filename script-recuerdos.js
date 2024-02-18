@@ -18,6 +18,7 @@ var textoExplicativo = {
     "Anillos": "Mi principe, arrodillada ante mi cada vez que fabrica un anillo nuevo para mi, por nosotras, nunca dejará de enternecer mi corazón y llenarme de cariño",
     "Espadas": "Cuando me enseñaste a poner emotes en cualquier dirección, y nos pusimos a hacer esta pose tan linda {3",
     "Hosca": "Aquel día, en el que por fin pudimos evolucionar aquella hosca que te acompañó por tanto tiempo, y seguirá haciéndolo por mucho más, ahora más fuerte, para mi príncipe",
+    "Anillos2": "Y bueno, un último recuerdo antes de entregarte esto por ahora...Tu regalo hacía mi, tan preciado como todos, con la promesa de que me acompañarán en apariencia y simbolismo",
 
     "poseGuapa": "Una de tus poses mas bonitas, me dejas ver esa delicadeza, esa hermosura que tanto me cautiva, una mujer fuerte, valiente e independiente, pero que también puede ser linda y femenina para mi.",
     "Frigost": "Representando aquella conversación que tuvimos en Kontatrás, ahora ese lugar es uno de mis favoritos también, y voy cada que me siento agotada o sin ganas de nada, o de solo pensar, gracias",

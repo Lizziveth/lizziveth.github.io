@@ -19,7 +19,8 @@ const frasesPersonalizadas = [
   "Contigo, la vida me ha demostrado que soy capaz de amar y recibir el mismo amor, que no estoy condenada por un destino",
   "Vivo un sueño en mi realidad cuando estoy a tu lado",
   "Siempre estás en mi mente 'Just you in my Imagination'",
-  "Creemos muchos más recuerdos juntas."    
+  "Creemos muchos más recuerdos juntas.", 
+  "Can i get a kiss? And can you make it last forever", 
 ];
 
 
